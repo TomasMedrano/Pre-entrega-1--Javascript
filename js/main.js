@@ -64,32 +64,30 @@ function calculo1 () {
             else {
                 alert(`Lamento informarte que no lograste regularizar la materia deberas intentarlo otra vez 😥`)
                 return estadoFisica1= "desaprobado"
-            }
-        
-                
+            }   
             }
      calculo1()
      algebra()
      fisica1()
 
-    switch(estadoCalculo1,estadoAlgebra){
-        case ("aprobado" , "aprobado"):
+     if (estadoCalculo1=="aprobado" && estadoAlgebra=="aprobado"){
         alert (`vas a poder cursar calculo 2 y calculo 3 💪🤓`)
-        break
-        case (("regular","regular")||("regular" ,"aprobado")||("aprobado" ,"regular")):
+     }
+     else if ((estadoCalculo1=="regular"&&estadoAlgebra=="regular")||(estadoCalculo1=="regular"&&estadoAlgebra=="aprobado")||(estadoCalculo1=="aprobado"&&estadoAlgebra=="regular")){
         alert (`vas a poder cursar calculo 2 💪`)
-        break
-        default:
-            alert ("No vas a poder hacer calculo 2 😢")
-    } 
+     }
+     else {
+        alert ("No vas a poder hacer Calculo 2😢")
+     }
+
     
-    switch(estadoCalculo1,estadoFisica1){
-        case ("aprobado","aprobado"):
-        alert (`vas a poder cursar fisica 2 y fisica 3 💪🤓`)
-        break
-        case (("regular","regular")||("regular","aprobado")||("aprobado","regular")):
-        alert (`vas a poder cursar fisica 2 💪`)
-        break
-        default:
-            alert ("No vas a poder hacer Fisica 2😢")
-    }        
+     if (estadoCalculo1=="aprobado" && estadoFisica1=="aprobado"){
+        alert (`vas a poder cursar Fisica 2 y Fisica 3 💪🤓`)
+     }
+     else if ((estadoCalculo1=="regular"&&estadoFisica1=="regular")||(estadoCalculo1=="regular"&&estadoFisica1=="aprobado")||(estadoCalculo1=="aprobado"&&estadoFisica1=="regular")){
+        alert (`vas a poder cursar Fisica 2 💪`)
+     }
+     else {
+        alert ("No vas a poder hacer Fisica 2😢")
+     }
+    
