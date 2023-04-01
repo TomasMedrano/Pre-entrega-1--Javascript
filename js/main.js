@@ -11,7 +11,15 @@ let estadoAlgebra="";
 let estadoFisica1="";
 function calculo1 () {
     let parcial1 =parseFloat (prompt("Ingrese la nota de su primer parcial de Calculo 1 por favor"));
+    while (parcial1<0 || parcial1>10){
+       parcial1 =parseFloat (prompt ("Ingrese un valor correcto"));
+    }
+    alert (`Perfecto continuemos`)
     let parcial2 = parseFloat(prompt("Ingrese la nota de su segundo parcial Calculo 1 por favor"));
+    while (parcial2<0 || parcial2>10){
+        parcial2 =parseFloat (prompt ("Ingrese un valor correcto"));
+     }
+     alert (`Perfecto continuemos`)
     let promedio1=promedio(parcial1,parcial2);
     if (parcial1>=7 && parcial2>=7){
         alert(`Felicitaciones aprobaste Calculo 1 😁 con una nota de ${promedio1} 🍻🎉`);
@@ -32,7 +40,15 @@ function calculo1 () {
 
     function algebra () {
         let parcial1 = parseFloat(prompt("Ingrese la nota de su primer parcial de Algebra por favor"));
+        while (parcial1<0 || parcial1>10){
+            parcial1 =parseFloat (prompt ("Ingrese un valor correcto"));
+         }
+         alert (`Perfecto continuemos`)
         let parcial2 = parseFloat(prompt("Ingrese la nota de su segundo parcial algebra por favor"));
+        while (parcial2<0 || parcial2>10){
+            parcial2 =parseFloat (prompt ("Ingrese un valor correcto"));
+         }
+         alert (`Perfecto continuemos`)
         let promedio1=promedio(parcial1,parcial2);
         if (parcial1>=7 && parcial2>=7){
             alert(`Felicitaciones aprobaste Algebra 😁 con una nota de ${promedio1}  🍻🎉`)
@@ -51,7 +67,15 @@ function calculo1 () {
         }
         function fisica1 () {
             let parcial1 = parseFloat(prompt("Ingrese la nota de su primer parcial de Fisica 1 por favor"));
+            while (parcial1<0 || parcial1>10){
+                parcial1 =parseFloat (prompt ("Ingrese un valor correcto"));
+             }
+             alert (`Perfecto continuemos`);
             let parcial2 = parseFloat(prompt("Ingrese la nota de su segundo parcial Fisica 1  por favor"));
+            while (parcial2<0 || parcial2>10){
+                parcial2 =parseFloat (prompt ("Ingrese un valor correcto"));
+             }
+             alert (`Perfecto continuemos`);
             let promedio1=promedio(parcial1,parcial2);
             if (parcial1>=7 && parcial2>=7){
                 alert(`Felicitaciones aprobaste Fisica 1 😁  con una nota de ${promedio1} 🎉🍻`);
